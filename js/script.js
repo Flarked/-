@@ -15,15 +15,15 @@ myButton.addEventListener('click', (event) => {
 
     // Delete element of list
     deleteButton.addEventListener('click', () => {
-        // parent.removeChild(element) - удаляет указанный элемент (element) из родителя (parent)
+        // parent.removeChild(element) удаляет указанный элемент из родителя
         list.removeChild(newItem);
     })
 
     // Добавить кнопку в элемент списка
     // Метод parent.appendChild(element) позволяет вставить в конец элемента (parent) 
-    // какой-либо другой элемент (element)
+    // Какой-либо другой элемент
     newItem.appendChild(deleteButton);
     list.appendChild(newItem);
-    // Очистка поля
+    // Очистка
     nameInput.value = '';
 })
